@@ -12,7 +12,7 @@ type ButtonProps = {
   /** size of the button */
   size?: 'tiny'|'small'|'medium'|'big'|'large';
   /** set backgound color of the button */
-  color?: string;
+  backgroundColor?: string;
   /** width of the button arbitrarily set by the user */
   width?: string|number;
   /** if this props is true, the button is disabled */
@@ -27,14 +27,14 @@ const Button = ({
   theme,
   type,
   size,
-  color,
+  backgroundColor,
   width,
   disabled,
   onClick,
 }: ButtonProps) => {
   return (
     <button 
-      css={[ S.button, S.themes[theme], S.sizes[size], { width, color } ]} 
+      css={[ S.button, S.themes[theme], S.sizes[size], { width, backgroundColor } ]} 
       type={type}
       disabled={disabled}
       onClick={onClick}
@@ -48,7 +48,7 @@ Button.defaultProps = {
   type: 'button',
   theme: 'primary',
   size: 'medium',
-  color: '#ffffff',
+  backgroundColor: '#ffffff',
   disabled: false,
 };
 
