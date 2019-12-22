@@ -36,7 +36,7 @@ const Button = ({
     <button 
       css={[
         S.button,
-        S.themes[theme],
+        S.themes(theme, mainColor),
         S.sizes[size],
         { width }
       ]} 
