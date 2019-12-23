@@ -39,7 +39,7 @@ const Button = ({
         S.themes(theme, mainColor),
         S.sizes[size],
         { width }
-      ]} 
+      ]}
       type={type}
       disabled={disabled}
       onClick={onClick}

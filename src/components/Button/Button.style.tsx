@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { css } from '@emotion/core';
+import { rgba } from '../../lib/util';
 
 export const button = css`
   cursor: pointer;
@@ -10,7 +11,6 @@ export const button = css`
   height: 2rem;
   font-size: 0.875rem;
   padding: 0.5rem 1rem;
-  background: #20c997;
   color: white;
   border-radius: 0.25rem;
   line-height: 1;
@@ -19,57 +19,59 @@ export const button = css`
   &:focus {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   }
-  &:hover {
-    background: #38d9a9;
-  }
-  &:active {
-    background: #12b886;
-  }
 `;
 
+// background: #20c997;
+// &:hover {
+//   background: #38d9a9;
+// }
+// &:active {
+//   background: #12b886;
+// }
 export const themes = (theme: string, mainColor: string) => {
   let btnTheme;
 
   if (theme === 'primary') {
     btnTheme = css`
-      background: #20c997;
+      background: ${mainColor};
       color: white;
       &:hover:enabled {
-        background: #38d9a9;
+        opacity: 0.8;
       }
       &:active:enabled {
-        background: #12b886;
+        opacity: 0.8;
       }
       &:disabled {
-        background: #aed9cc;
+        opacity: 0.8;
       }
     `;
   } else if (theme === 'secondary') {
     btnTheme = css`
       background: #e9ecef;
       color: #343a40;
+
       &:hover:enabled {
-        background: #f1f3f5;
+        opacity: 0.8;
       }
       &:active:enabled {
-        background: #dee2e6;
+        opacity: 0.8;
       }
       &:disabled {
-        color: #c6d3e1;
+        opacity: 0.8;
       }
     `;
   } else if (theme === 'tertiary') {
     btnTheme = css`
       background: none;
-      color: #20c997;
+      color: ${mainColor};
       &:hover:enabled {
-        background: #e6fcf5;
+        background: rgba(${rgba(mainColor, 0.2)});
       }
       &:active:enabled {
-        background: #c3fae8;
+        background: rgba(${rgba(mainColor, 0.2)});
       }
       &:disabled {
-        color: #bcd9d0;
+        background: rgba(${rgba(mainColor, 0.2)});
       }
     `;
   }

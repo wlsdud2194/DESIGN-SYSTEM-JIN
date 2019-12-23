@@ -106,3 +106,24 @@ export const CustomWidth = () => {
     </div>
   );
 }
+
+export const CustomColor = () => {
+  return (
+    <div css={buttonWrapper}>
+      <div className="description">Custom Button</div>
+      <div>
+        <Button mainColor={"#6699ff"}>Custom Button</Button>
+      </div>
+      <div>
+        <Button mainColor={"#6699ff"} disabled>Custom Button</Button>
+      </div>
+
+      <div>
+        <Button theme={"tertiary"} mainColor={"#6699ff"}>Custom Button</Button>
+      </div>
+      <div>
+        <Button theme={"tertiary"} mainColor={"#6699ff"} disabled>Custom Button</Button>
+      </div>
+    </div>
+  );
+};
