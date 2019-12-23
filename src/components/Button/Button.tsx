@@ -10,7 +10,7 @@ type ButtonProps = {
   /** make theme of the button */
   theme?: 'primary'|'secondary'|'tertiary';
   /** size of the button */
-  size?: 'tiny'|'small'|'medium'|'big'|'large';
+  size?: 'small'|'medium'|'big';
   /** set main color of the button */
   mainColor?: string;
   /** width of the button arbitrarily set by the user */
@@ -38,7 +38,7 @@ const Button = ({
         S.button,
         S.themes(theme, mainColor),
         S.sizes[size],
-        { width }
+        { width },
       ]}
       type={type}
       disabled={disabled}

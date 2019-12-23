@@ -119,7 +119,7 @@ export const CustomColor = () => {
       </div>
 
       <div>
-        <Button theme={"tertiary"} mainColor={"#6699ff"}>Custom Button</Button>
+        <Button theme={"tertiary"} mainColor={"#6699ff"} size={"small"}>Custom Button</Button>
       </div>
       <div>
         <Button theme={"tertiary"} mainColor={"#6699ff"} disabled>Custom Button</Button>

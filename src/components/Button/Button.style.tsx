@@ -16,18 +16,11 @@ export const button = css`
   line-height: 1;
   font-weight: 600;
 
-  &:focus {
+  &:active {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   }
 `;
 
-// background: #20c997;
-// &:hover {
-//   background: #38d9a9;
-// }
-// &:active {
-//   background: #12b886;
-// }
 export const themes = (theme: string, mainColor: string) => {
   let btnTheme;
 
