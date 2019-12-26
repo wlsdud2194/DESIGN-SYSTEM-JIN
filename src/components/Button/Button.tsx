@@ -8,11 +8,11 @@ type ButtonProps = {
   /** set type of the button */
   type?: 'button'|'submit'|'reset'; 
   /** make theme of the button */
-  theme?: 'primary'|'secondary'|'tertiary';
+  theme: 'primary'|'secondary'|'tertiary';
   /** size of the button */
-  size?: 'small'|'medium'|'big';
+  size: 'small'|'medium'|'big';
   /** set main color of the button */
-  mainColor?: string;
+  mainColor: string;
   /** width of the button arbitrarily set by the user */
   width?: string|number;
   /** if this props is true, the button is disabled */

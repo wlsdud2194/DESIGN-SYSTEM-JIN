@@ -4,11 +4,11 @@ import * as S from './ButtonGroup.style';
 
 type ButtonGroupProps = {
   /** set direction of the button */
-  direction?: 'row'|'column';
+  direction: 'row'|'column';
   /** set align items  */
-  align?: 'flex-start'|'center'|'flex-end';
+  align: 'flex-start'|'center'|'flex-end';
   /** gap of the button */
-  gap?: number|string;
+  gap: number|string;
   /** buttons */
   children: React.ReactNode;
   /** custom styling */

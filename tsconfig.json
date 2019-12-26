@@ -17,20 +17,16 @@
       "es6",
       "esnext"
     ],
-    "allowJs": true,
+    "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true
+    "declaration": true,
+    "declarationDir": "dist/types"
   },
-  "exclude": [
-    "node_modules",
-    "lib",
-    "es"
-  ],
+  "exclude": ["**/*.stories.tsx"],
   "include": [
     "src"
   ]
