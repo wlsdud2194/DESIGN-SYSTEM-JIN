@@ -19,7 +19,7 @@
   "dependencies": {
     "@types/jest": "24.0.23",
     "@types/node": "12.12.14",
-    "@types/react": "16.9.13",
+    "@types/react": "^16.9.17",
     "@types/react-dom": "16.9.4",
     "hex-rgb": "^4.1.0",
     "react-scripts": "3.2.0",
@@ -33,7 +33,9 @@
     "@storybook/addons": "^5.2.7",
     "@storybook/react": "^5.2.7",
     "@svgr/rollup": "^5.0.0",
+    "@types/recompose": "^0.30.7",
     "babel-loader": "^8.0.6",
+    "babel-plugin-named-asset-import": "^0.3.5",
     "babel-preset-react-app": "^9.0.2",
     "react-docgen-typescript-loader": "^3.6.0",
     "rollup": "^1.27.14",
@@ -68,7 +70,10 @@
     "url": "https://github.com/wlsdud2194/DESIGN-SYSTEM-JIN"
   },
   "keywords": [
-    "react", "uikit", "design system", "component"
+    "react",
+    "uikit",
+    "design system",
+    "component"
   ],
   "bugs": {
     "url": "https://github.com/wlsdud2194/DESIGN-SYSTEM-JIN/issues",
