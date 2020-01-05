@@ -75,7 +75,8 @@ const Modal = ({
 
 Modal.defaultProps = {
   cancelText: '취소',
-  confirmText: '확인'
+  confirmText: '확인',
+  color: "#20c997",
 };
 
 export default Modal;
