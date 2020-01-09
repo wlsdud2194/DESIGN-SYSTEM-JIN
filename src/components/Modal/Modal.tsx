@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { css } from '@emotion/core';
-// import * as S from './Modal.style';
+import * as S from './Modal.style';
 
 import ButtonGroup from '../ButtonGroup';
 import Button from '../Button';
@@ -45,7 +45,7 @@ const Modal = ({
 
   return (
     <>
-      <div></div>
+      <div css={[S.fullscreen]}></div>
       <div>
         <div>
           {title && <h3>{title}</h3>}
